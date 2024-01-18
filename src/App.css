@@ -1,38 +1,351 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+body {
+  background: #95b9c9;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* HEADER START  */
+#header {
+  height: 100px;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.header {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-a a {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 4pc;
+}
+/* HEADER END  */
+
+/* ADMIN START  */
+.admint h1 {
+  color: #33332d;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
   text-align: center;
+  margin-top: 2pc;
+  margin-bottom: 6pc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.admin-box {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.admin-input {
   display: flex;
   flex-direction: column;
+  gap: 3pc;
+}
+
+.fool {
+  width: 365px;
+  height: 67px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+.fool h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  padding-left: 2pc;
+  padding-top: 1pc;
+}
+
+.admin-input input {
+  width: 549px;
+  height: 67px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  border: none;
+  padding-left: 2pc;
+}
+
+.admin-input button {
+  width: 254.1px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ddaa27;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-top: 6pc;
+}
+
+.admit-img input {
+  width: 477px;
+  height: 289px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+  color: #000;
+  font-family: MS Gothic;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  padding-left: 2pc;
+}
+/* ADMIN END  */
+
+/* MENU START  */
+
+.munus-box {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 2pc;
+}
+.menus h1 {
+  color: #33332d;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  margin-top: 2pc;
+  margin-bottom: 2pc;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  padding: 2pc;
+  width: 337px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #d9d9d9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  width: 337px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: cover;
 }
+
+.card-txt {
+  margin: 1pc 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-txt p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.card-txt h3 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2pc;
+}
+
+.btn-order {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  width: 154px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ddaa27;
+}
+/* MENU END  */
+
+/* ADMIN START  */
+
+.orders h1 {
+  color: #33332d;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  margin-top: 3pc;
+  margin-bottom: 2pc;
+}
+/* ADMIN END  */
+
+/* ORDER START  */
+
+.order-card{
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-card img {
+  width: 186px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+.order-card {
+  width: 886px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+.foodname {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.foodprice {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.btn-del {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  width: 188px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #bd1d1d;
+}
+
+.order-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-mn{
+  display: flex;
+  gap: 1.9pc;
+  margin-top: 1pc;
+}
+
+.order-mn button {
+  width: 60px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ddaa27;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.order-mn h2 {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+
+.order-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1pc;
+}
+/* ORDER END  */
